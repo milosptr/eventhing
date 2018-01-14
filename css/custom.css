@@ -1,0 +1,93 @@
+/* -------- Header Section -------- */
+header {
+    background-color: #000;
+}
+
+/* -------- Banner Section-------- */
+
+#banner {
+    position: relative;
+    height: calc(100vh - 50px);
+    background: url(../images/banner-bridge.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shine-overlay {
+    background: url(../images/grid-px.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.grid-overlay {
+    background-color: #000;
+    background-image: linear-gradient(30deg, #000, 5px, #fff);
+    background-size: 5px 5px;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* -------- Stars style -------- */
+
+.b-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+.stars {
+    top: 70%;
+    position: absolute;
+}
+@-webkit-keyframes star-rotate {
+    0% {
+        -webkit-transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0)
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg)
+    }
+}
+@keyframes star-rotate {
+    0% {
+        -webkit-transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0)
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+    }
+}
+.stars {
+    -webkit-transform: perspective(500px);
+    transform: perspective(500px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective-origin: 50% 100%;
+    perspective-origin: 50% 100%;
+    -webkit-animation: star-rotate 500s infinite linear;
+    animation: star-rotate 500s infinite linear
+}
+.star {
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform-origin: 0 0 -300px;
+    transform-origin: 0 0 -300px;
+    -webkit-transform: translate3d(0, 0, -300px);
+    transform: translate3d(0, 0, -300px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
