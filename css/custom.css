@@ -8,7 +8,6 @@ header {
 #banner {
     position: relative;
     height: calc(100vh - 50px);
-    margin-top: 50px;
     background: url(../images/banner-bridge.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,13 +32,6 @@ header {
     top: 0;
 }
 
-.nav-logo{
-    padding: 0 0 4px 0;
-}
-
-#content{
-    padding: 50px 0;
-}
 
 /* -------- Stars style -------- */
 
@@ -99,5 +91,3 @@ header {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
-
-/* -------- END OF Stars style -------- */
