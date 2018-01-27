@@ -1,3 +1,8 @@
+/* -------- Global Classes -------- */
+.section-padding {
+    padding: 50px 0;
+}
+
 /* -------- Header Section -------- */
 header {
     background-color: #000;
@@ -101,3 +106,81 @@ header {
 }
 
 /* -------- END OF Stars style -------- */
+
+
+/* Single Page */
+
+.single-page {
+    background: #f8f8f8;
+}
+
+#featured-image {
+    background: url(../images/place-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+#featured-image .fetured-single-title {
+    width: 270px;
+    position: absolute;
+    left: 10%;
+    bottom: 10px;
+    color: #fff;
+}
+
+#featured-image .fetured-single-title h1 {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#featured-image .fetured-single-title h1:after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+#featured-image .fetured-single-title h6 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1em;
+    margin-bottom: 0;
+}
+
+#featured-image .featured-single-check {
+    width: 270px;
+    padding: 20px 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #de443a;
+    color: #fff;
+    text-align: center;
+}
+
+#featured-image .featured-signle-price-title {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#featured-image .featured-signle-price {
+    font-size: 24px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+#single-content .desc-text,
+#single-content .desc-informations{
+    background: #fff;
+    box-shadow: 0px 2px 2px #ddd;
+    padding: 35px;
+}
