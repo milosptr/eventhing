@@ -184,3 +184,19 @@ header {
     box-shadow: 0px 2px 2px #ddd;
     padding: 35px;
 }
+
+#single-min-promo {
+    padding: 80px 0;
+}
+
+#single-min-promo .mini-promo-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#single-min-promo .mini-promo-desc {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
